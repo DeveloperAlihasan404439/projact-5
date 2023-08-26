@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- tailwindcss cdn link  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- daisyUi cdn link  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome cdn link  -->
+    <script src="https://kit.fontawesome.com/0dfc93affd.js" crossorigin="anonymous"></script>
+    <title>Summer Sale Assignament</title>
+</head>
+
+<body class="bg-[#f8f8f8]">
+    <header class="bg-[#fcf4d6]">
+        <nav class="w-11/12 mx-auto py-3">
+            <div class=" md:rounded-[50px] md:flex items-center justify-between lg:relative">
+                <div class="navbar-center hidden lg:flex">
+                    <ul class=" menu-horizontal gap-4 font-medium text-blanck text-3xl font-[25px] px-1">
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#">Shop</a>
+                        </li>
+                    </ul>
+                </div>
+                <div
+                    class="md:navbar-start lg:absolute top-0 right-[40%] flex justify-between md:justify-center lg:0 px-5 md:px-0">
+                    <div class="dropdown">
+                        <label tabindex="0" class="btn btn-ghost lg:hidden">
+                            <i class="fa-solid fa-bars"></i>
+                        </label>
+                        <div class="flex justify-end">
+                            <ul tabindex="0" class="menu menu-sm dropdown-content z-[1] p-2 rounded-box w-32 bg-white">
+                                <li class="text-lg ">
+                                    <a href="#" class="flex justify-end">Home</a>
+                                </li>
+                                <li class="text-lg ">
+                                    <a href="#" class="flex justify-end">About Us</a>
+                                </li>
+                                <li class="text-lg ">
+                                    <a href="#" class="flex justify-end">Shop</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="flex md:flex-row-reverse gap-4 items-center">
+                        <h1 class="md:text-[25px] font-bold text-black md:text-blanck">Summer Sela</h1>
+                        <img src="./images/logo.png" alt="" class="w-[70px] h-[40px] text-black">
+                    </div>
+                </div>
+                <div class="hidden md:inline-block relative pr-4">
+                    <i class="fa-solid fa-right-to-bracket text-3xl "></i>
+                </div>
+            </div>
+        </nav>
+        <section class="md:flex lg:flex-row-reverse justify-between items-center">
+            <div class="md:w-[50%]">
+                <img src="./images/Summer 1.png" alt="">
+            </div>
+            <div class="md:w-[50%] text-center">
+                <h1 class="text-xl md:text-2xl lg:text-3xl text-blanck font-medium">---SALE FEVER---</h1>
+                <h1 class="text-2xl md:text-4xl lg:text-6xl font-bold text-blanck py-2 md:py-5">Purchase TK 200 or above
+                    & get <span class="text-[#E527B2]">20% off</span></h1>
+                <div class="flex items-center justify-center text-center gap-2 md:gap-5 py-2 md:py-5">
+                    <h1 class="text-xl md:text-2xl text-blanck font-medium">Use Promo Code</h1>
+                    <button
+                        class="text-xl md:text-2xl text-white font-medium py-2 px-4 bg-[#E527B2] rounded-md">SELL200</button>
+                </div>
+            </div>
+
+        </section>
+    </header>
+    <section class="w-11/12 mx-auto">
+        <section class="md:flex justify-between gap-5">
+            <div class="md:w-[60%] lg:w-[75%]">
+                <h1 class="text-2xl text-center lg:text-left md:text-4xl font-medium text-blanck py-5 md:py-10">
+                    Kitchenware</h1>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                    <div onclick="useCardFunction(this)" class="card bg-base-100 shadow-xl p-5">
+                        <div class="bg-[#f3f3f3] rounded-xl p-7 flex items-center justify-center">
+                            <img src="/images/prod1.png" alt="" class="h-[250px] md:h-[200px]">
+                        </div>
+                        <div class="card-body">
+                            <div class="flex justify-center">
+                                <i class="fa-solid fa-star text-[#FFC107]"></i>
+                                <i class="fa-solid fa-star text-[#FFC107]"></i>
+                                <i class="fa-solid fa-star text-[#FFC107]"></i>
+                                <i class="fa-regular fa-star text-[#FFC107]"></i>
+                                <i class="fa-regular fa-star text-[#FFC107]"></i>
+                            </div>
+                            <h2 class="text-center text-2xl font-medium text-blanck py-3">K. Accessories</h2>
+                            <div
+                                class="text-center text-2xl font-medium text-gray-400 flex gap-4 justify-center items-center ">
+                                <h1>39.00</h1>
+                                </h1> TK</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div onclick="useCardFunction(this)" class="card bg-base-100 shadow-xl p-5">
+                        <div class="bg-[#f3f3f3] rounded-xl p-7 flex items-center justify-center">
+                            <img src="/images/prod2.png" alt="" class="h-[250px] md:h-[200px]">
+                        </div>
+                        <div class="card-body">
+                            <div class="flex justify-center">
+                                <i class="fa-regular fa-star text-[#FFC107]"></i>
+                                <i class="fa-regular fa-star text-[#FFC107]"></i>
+                                <i class="fa-regular fa-star text-[#FFC107]"></i>
+                                <i class="fa-regular fa-star text-[#FFC107]"></i>
+                                <i class="fa-regular fa-star text-[#FFC107]"></i>
+                            </div>
+                            <h2 class="text-center text-xl md:text-2xl font-medium text-blanck md:py-3">K. Accesso</h2>
+                            <div
+                                class="text-center text-xl md:text-2xl font-medium text-gray-400 flex gap-4 justify-center items-center ">
+                                <h1>25.00</h1>
+                                </h1> TK</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div onclick="useCardFunction(this)" class="card bg-base-100 shadow-xl p-5">
+                        <div class="bg-[#f3f3f3] rounded-xl p-7 flex items-center justify-center">
+                            <img src="/images/prod3.png" alt="" class="h-[250px] md:h-[200px]">
+                        </div>
+                        <div class="card-body">
+                            <div class="flex justify-center">
+                                <i class="fa-solid fa-star text-[#FFC107]"></i>
+                                <i class="fa-solid fa-star text-[#FFC107]"></i>
+                                <i class="fa-solid fa-star text-[#FFC107]"></i>
+                                <i class="fa-solid fa-star text-[#FFC107]"></i>
+                                <i class="fa-regular fa-star text-[#FFC107]"></i>
+                            </div>
+                            <h2 class="text-center text-xl md:text-2xl font-medium text-blanck md:py-3">Home Cooker</h2>
+                            <div
+                                class="text-center text-xl md:text-2xl font-medium text-gray-400 flex gap-4 justify-center items-center ">
+                                <h1>49.00</h1>
+                                </h1> TK</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h1 class="text-2xl text-center lg:text-left md:text-4xl font-medium text-blanck py-5 md:py-10">
+                    Sportswear</h1>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                    <div onclick="useCardFunction(this)" class="card bg-base-100 shadow-xl p-5">
+                        <div class="bg-[#f3f3f3] rounded-xl p-7 flex items-center justify-center">
+                            <img src="/images/prod4.png" alt="" class="h-[250px] md:h-[200px]">
+                        </div>
+                        <div class="card-body">
+                            <div class="flex justify-center">
+                                <i class="fa-solid fa-star text-[#FFC107]"></i>
+                                <i class="fa-solid fa-star text-[#FFC107]"></i>
+                                <i class="fa-regular fa-star text-[#FFC107]"></i>
+                                <i class="fa-regular fa-star text-[#FFC107]"></i>
+                                <i class="fa-regular fa-star text-[#FFC107]"></i>
+                            </div>
+                            <h2 class="text-center text-xl md:text-2xl font-medium text-blanck md:py-3">Sports Back Cap
+                            </h2>
+                            <div
+                                class="text-center text-xl md:text-2xl font-medium text-gray-400 flex gap-4 justify-center items-center ">
+                                <h1>49.00</h1>
+                                </h1> TK</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div onclick="useCardFunction(this)" class="card bg-base-100 shadow-xl p-5">
+                        <div class="bg-[#f3f3f3] rounded-xl p-7 flex items-center justify-center">
+                            <img src="/images/prod5.png" alt="" class="h-[250px] md:h-[200px]">
+                        </div>
+                        <div class="card-body">
+                            <div class="flex justify-center">
+                                <i class="fa-solid fa-star text-[#FFC107]"></i>
+                                <i class="fa-solid fa-star text-[#FFC107]"></i>
+                                <i class="fa-solid fa-star text-[#FFC107]"></i>
+                                <i class="fa-solid fa-star text-[#FFC107]"></i>
+                                <i class="fa-regular fa-star text-[#FFC107]"></i>
+                            </div>
+                            <h2 class="text-center text-xl md:text-2xl font-medium text-blanck md:py-3">Full Jersey Set
+                            </h2>
+                            <div
+                                class="text-center text-xl md:text-2xl font-medium text-gray-400 flex gap-4 justify-center items-center ">
+                                <h1>69.00</h1>
+                                </h1> TK</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div onclick="useCardFunction(this)" class="card bg-base-100 shadow-xl p-5">
+                        <div class="bg-[#f3f3f3] rounded-xl p-7 flex items-center justify-center">
+                            <img src="/images/prod6.png" alt="" class="h-[250px] md:h-[200px]">
+                        </div>
+                        <div class="card-body">
+                            <div class="flex justify-center">
+                                <i class="fa-solid fa-star text-[#FFC107]"></i>
+                                <i class="fa-solid fa-star text-[#FFC107]"></i>
+                                <i class="fa-solid fa-star text-[#FFC107]"></i>
+                                <i class="fa-regular fa-star text-[#FFC107]"></i>
+                                <i class="fa-regular fa-star text-[#FFC107]"></i>
+                            </div>
+                            <h2 class="text-center text-xl md:text-2xl font-medium text-blanck md:py-3">Sports cates
+                            </h2>
+                            <div
+                                class="text-center text-xl md:text-2xl font-medium text-gray-400 flex gap-4 justify-center items-center ">
+                                <h1>159.00</h1>
+                                </h1> TK</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h1 class="text-2xl text-center lg:text-left md:text-4xl font-medium text-blanck py-5 md:py-10">
+                    Furniture</h1>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                    <div onclick="useCardFunction(this)" class="card bg-base-100 shadow-xl p-5">
+                        <div class="bg-[#f3f3f3] rounded-xl p-7 flex items-center justify-center">
+                            <img src="/images/prod7.png" alt="" class="h-[250px] md:h-[200px]">
+                        </div>
+                        <div class="card-body">
+                            <div class="flex justify-center">
+                                <i class="fa-solid fa-star text-[#FFC107]"></i>
+                                <i class="fa-solid fa-star text-[#FFC107]"></i>
+                                <i class="fa-solid fa-star text-[#FFC107]"></i>
+                                <i class="fa-solid fa-star text-[#FFC107]"></i>
+                                <i class="fa-regular fa-star text-[#FFC107]"></i>
+                            </div>
+                            <h2 class="text-center text-xl md:text-2xl font-medium text-blanck md:py-3">Single Relax
+                                Chair</h2>
+                            <div
+                                class="text-center text-xl md:text-2xl font-medium text-gray-400 flex gap-4 justify-center items-center ">
+                                <h1>185.00</h1>
+                                </h1> TK</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div onclick="useCardFunction(this)" class="card bg-base-100 shadow-xl p-5">
+                        <div class="bg-[#f3f3f3] rounded-xl p-7 flex items-center justify-center">
+                            <img src="/images/prod8.png" alt="" class="h-[250px] md:h-[200px]">
+                        </div>
+                        <div class="card-body">
+                            <div class="flex justify-center">
+                                <i class="fa-solid fa-star text-[#FFC107]"></i>
+                                <i class="fa-solid fa-star text-[#FFC107]"></i>
+                                <i class="fa-solid fa-star text-[#FFC107]"></i>
+                                <i class="fa-solid fa-star text-[#FFC107]"></i>
+                                <i class="fa-solid fa-star text-[#FFC107]"></i>
+                            </div>
+                            <h2 class="text-center text-xl md:text-2xl font-medium text-blanck md:py-3">Children play
+                            </h2>
+                            <div
+                                class="text-center text-xl md:text-2xl font-medium text-gray-400 flex gap-4 justify-center items-center ">
+                                <h1>299.00</h1>
+                                </h1> TK</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div onclick="useCardFunction(this)" class="card bg-base-100 shadow-xl p-5">
+                        <div class="bg-[#f3f3f3] rounded-xl p-7 flex items-center justify-center">
+                            <img src="/images/prod9.png" alt="" class="h-[250px] md:h-[200px]">
+                        </div>
+                        <div class="card-body">
+                            <div class="flex justify-center">
+                                <i class="fa-solid fa-star text-[#FFC107]"></i>
+                                <i class="fa-solid fa-star text-[#FFC107]"></i>
+                                <i class="fa-regular fa-star text-[#FFC107]"></i>
+                                <i class="fa-regular fa-star text-[#FFC107]"></i>
+                                <i class="fa-regular fa-star text-[#FFC107]"></i>
+                            </div>
+                            <h2 class="text-center text-xl md:text-2xl font-medium text-blanck md:py-3">Flexible Sofa
+                            </h2>
+                            <div
+                                class="text-center text-xl md:text-2xl font-medium text-gray-400 flex gap-4 justify-center items-center ">
+                                <h1>339.00</h1>
+                                </h1> TK</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="md:w-[40%] lg:w-[25%]">
+                <div class="mt-5 md:mt-40 bg-white rounded-md px-5 lg:px-2 py-10">
+                    <h1 class="text-center lg:text-left text-3xl font-medium text-blanck pb-2 md:pb-5">Have coupon?</h1>
+                    <div
+                        class="flex md:flex-col lg:flex-row items-center justify-center lg:justify-left md:gap-3 lg:gap-0">
+                        <input id="capture-input" value="" type="text" placeholder="Coupon code"
+                            class="px-5 py-[10px] border-2 border-gray-700 rounded-md lg:rounded-l-md w-[70%] md:w-[150px]">
+                        <button id="capture-btn"
+                            class="cursor-pointer text-2xl text-white font-medium py-3 px-4 bg-[#ef5fc6] rounded-md md:rounded-l-[0px]"
+                            disabled>Apply</button>
+                    </div>
+                </div>
+                <div class="mt-5 bg-white relative rounded-md px-5 py-10">
+                    <div id="updated-text"></div>
+                    <hr>
+                    <h1 class="text-2xl font-medium text-blanck pt-10">Total price : <span id="totle-taka"
+                            class="text-gray-400">00</span><span class="text-gray-400">TK</span></h1>
+                    <h1 class="text-2xl font-medium text-blanck py-3">Discount : <span id="discount-taka"
+                            class="text-gray-400">00</span><span class="text-gray-400">TK</span></h1>
+                    <h1 class="text-2xl font-medium text-blanck pb-10">Total : <span id="discount-totle"
+                            class="text-gray-400">00</span><span class="text-gray-400">TK</span></h1>
+
+                    <button id="purchase" onclick="my_modal_5.showModal()"
+                        class="lg:absolute -bottom-5 right-7 text-2xl text-white w-[100%] lg:w-[80%] font-medium py-2 px-9 bg-[#ef5fc6] rounded-md"
+                        disabled>Make
+                        Purchase</button>
+                    <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                        <form method="dialog" class="modal-box">
+                            <div class="flex flex-col items-center justify-center">
+                                <img src="./images/congo.png" alt="">
+                                <h1 class="text-3xl font-medium text-black py-3">Congratulations</h1>
+                                <h2 class="text-xl text-gray-400 pb-7">Your Purchase the product</h2>
+                                <button id="go-to-home"
+                                    class="text-2xl text-white font-medium py-2 px-4 bg-[#E527B2] rounded-md w-[50%]">Go
+                                    Home</button>
+                            </div>
+                        </form>
+                    </dialog>
+                </div>
+            </div>
+        </section>
+        <section class="md:flex justify-between gap-5">
+            <div class="md:w-[60%] lg:w-[75%]">
+                <h1 class="text-2xl text-center md:text-4xl font-medium text-blanck py-5 md:py-10">
+                    My Prodack </h1>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                    <div onclick="(myProductBtn('my-btn','input-fild'))" class="card bg-base-100 shadow-xl p-5">
+                        <div class=" flex items-center justify-center">
+                            <img src="/images/my.png" alt="" class="h-[250px]  rounded-md md:h-[200px]">
+                        </div>
+                        <div class="flex justify-center mt-7">
+                            <i class="fa-solid fa-star text-[#FFC107]"></i>
+                            <i class="fa-solid fa-star text-[#FFC107]"></i>
+                            <i class="fa-solid fa-star text-[#FFC107]"></i>
+                            <i class="fa-regular fa-star text-[#FFC107]"></i>
+                            <i class="fa-regular fa-star text-[#FFC107]"></i>
+                        </div>
+                        <h1 id="name" class="ttext-xl lg:ext-2xl text-center md:text-4l font-medium text-blanck py-2">M Shajahan
+                        </h1>
+                        <h1 class="text-xl md:text-xl lg:text-2xl font-medium text-black text-center md:py-3">price <span id="price"
+                                class="text-gray-400">430</span>TK</h1>
+                        <div class="flex justify-between items-center py-2 gap-2">
+                            <input id="input-fild" type="number" value="0"
+                                class="px-5 py-[10px] border-2 border-gray-700 rounded-md lg:rounded-l-md w-[70%]">
+                            <h1 id="items" class="text-2xl font-medium text-black bg-[#E527B2] px-7 py-2 rounded-md">00
+                            </h1>
+                        </div>
+                        <button onclick="myProdackSum('name','items','input-fild','price')" id="my-btn"
+                            class="text-2xl text-white font-medium py-2 bg-[#E527B2] rounded-md w-[100%]" disabled>Add
+                            Prodack</button>
+                    </div>
+                    <div onclick="(myProductBtn('my-btn-2','input-fild2'))" class="card bg-base-100 shadow-xl p-5">
+                        <div class=" flex items-center justify-center">
+                            <img src="/images/my7.png" alt="" class="h-[250px] rounded-md md:h-[200px]">
+                        </div>
+                        <div class="flex justify-center mt-20">
+                            <i class="fa-solid fa-star text-[#FFC107]"></i>
+                            <i class="fa-solid fa-star text-[#FFC107]"></i>
+                            <i class="fa-regular fa-star text-[#FFC107]"></i>
+                            <i class="fa-regular fa-star text-[#FFC107]"></i>
+                            <i class="fa-regular fa-star text-[#FFC107]"></i>
+                        </div>
+                        <h1 id="name2" class="text-xl lg:text-2xl text-center md:text-xl font-medium text-blanck py-2">C Grad Main
+                        </h1>
+                        <h1 class="text-xl md:text-xl lg:text-2xl font-medium text-black text-center md:py-3">price <span id="price2"
+                                class="text-gray-400">300</span>TK</h1>
+                        <div class="flex justify-between items-center py-2 gap-2">
+                            <input id="input-fild2" type="number" value="0"
+                                class="px-5 py-[10px] border-2 border-gray-700 rounded-md lg:rounded-l-md w-[70%]">
+                            <h1 id="items2" class="text-2xl font-medium text-black bg-[#E527B2] px-7 py-2 rounded-md">00
+                            </h1>
+                        </div>
+                        <button onclick="myProdackSum('name2','items2','input-fild2','price2')" id="my-btn-2"
+                            class="text-2xl text-white font-medium py-2 bg-[#E527B2] rounded-md w-[100%]" disabled>Add
+                            Prodack</button>
+                    </div>
+                    <div onclick="(myProductBtn('my-btn-3','input-fild3'))" class="card bg-base-100 shadow-xl p-5">
+                        <div class=" flex items-center justify-center">
+                            <img src="/images/my4.png" alt="" class="h-[250px] rounded-md md:h-[200px]">
+                        </div>
+                        <div class="flex justify-center mt-20">
+                            <i class="fa-solid fa-star text-[#FFC107]"></i>
+                            <i class="fa-solid fa-star text-[#FFC107]"></i>
+                            <i class="fa-solid fa-star text-[#FFC107]"></i>
+                            <i class="fa-solid fa-star text-[#FFC107]"></i>
+                            <i class="fa-regular fa-star text-[#FFC107]"></i>
+                        </div>
+                        <h1 id="name3" class="text-xl lg:text-2xl text-center md:text-xl font-medium text-blanck py-2">L Wosum
+                        </h1>
+                        <h1 class="text-xl md:text-xl lg:text-2xl font-medium text-black text-center md:py-3">price <span id="price3"
+                                class="text-gray-400">150</span>TK</h1>
+                        <div class="flex justify-between items-center py-2 gap-2">
+                            <input id="input-fild3" type="number" value="0"
+                                class="px-5 py-[10px] border-2 border-gray-700 rounded-md lg:rounded-l-md w-[70%]">
+                            <h1 id="items3" class="text-2xl font-medium text-black bg-[#E527B2] px-7 py-2 rounded-md">00
+                            </h1>
+                        </div>
+                        <button onclick="myProdackSum('name3','items3','input-fild3','price3')" id="my-btn-3"
+                            class="text-2xl text-white font-medium py-2 bg-[#E527B2] rounded-md w-[100%]" disabled>Add
+                            Prodack</button>
+                    </div>
+                    <div onclick="(myProductBtn('my-btn-4','input-fild4'))" class="card bg-base-100 shadow-xl p-5">
+                        <div class=" flex items-center justify-center">
+                            <img src="/images/my8.png" alt="" class="h-[250px] rounded-md md:h-[200px]">
+                        </div>
+                        <div class="flex justify-center mt-7">
+                            <i class="fa-solid fa-star text-[#FFC107]"></i>
+                            <i class="fa-solid fa-star text-[#FFC107]"></i>
+                            <i class="fa-solid fa-star text-[#FFC107]"></i>
+                            <i class="fa-solid fa-star text-[#FFC107]"></i>
+                            <i class="fa-solid fa-star text-[#FFC107]"></i>
+                        </div>
+                        <h1 id="name4" class="text-xl lg:text-2xl text-center md:text-xl font-medium text-blanck py-2">D Daynig
+                        </h1>
+                        <h1 class="text-xl md:text-xl lg:text-2xl font-medium text-black text-center md:py-3">price <span id="price4"
+                                class="text-gray-400">200</span>TK</h1>
+                        <div class="flex justify-between items-center py-2 gap-2">
+                            <input id="input-fild4" type="number" value="0"
+                                class="px-5 py-[10px] border-2 border-gray-700 rounded-md lg:rounded-l-md w-[70%]">
+                            <h1 id="items4" class="text-2xl font-medium text-black bg-[#E527B2] px-7 py-2 rounded-md">00
+                            </h1>
+                        </div>
+                        <button onclick="myProdackSum('name4','items4','input-fild4','price4')" id="my-btn-4"
+                            class="text-2xl text-white font-medium py-2 bg-[#E527B2] rounded-md w-[100%]" disabled>Add
+                            Prodack</button>
+                    </div>
+                    <div onclick="(myProductBtn('my-btn-5','input-fild5'))" class="card bg-base-100 shadow-xl p-5">
+                        <div class=" flex items-center justify-center">
+                            <img src="/images/my2.png" alt="" class="h-[250px] rounded-md md:h-[200px]">
+                        </div>
+                        <div class="flex justify-center mt-7">
+                            <i class="fa-solid fa-star text-[#FFC107]"></i>
+                            <i class="fa-regular fa-star text-[#FFC107]"></i>
+                            <i class="fa-regular fa-star text-[#FFC107]"></i>
+                            <i class="fa-regular fa-star text-[#FFC107]"></i>
+                            <i class="fa-regular fa-star text-[#FFC107]"></i>
+                        </div>
+                        <h1 id="name5" class="text-xl lg:text-2xl text-center md:text-xl font-medium text-blanck py-2">B Sumane
+                        </h1>
+                        <h1 class="text-xl md:text-xl lg:text-2xl font-medium text-black text-center md:py-3">price <span id="price5"
+                                class="text-gray-400">430</span>TK</h1>
+                        <div class="flex justify-between items-center py-2 gap-2">
+                            <input id="input-fild5" type="number" value="0"
+                                class="px-5 py-[10px] border-2 border-gray-700 rounded-md lg:rounded-l-md w-[70%]">
+                            <h1 id="items5" class="text-2xl font-medium text-black bg-[#E527B2] px-7 py-2 rounded-md">00
+                            </h1>
+                        </div>
+                        <button onclick="myProdackSum('name5','items5','input-fild5','price5')" id="my-btn-5"
+                            class="text-2xl text-white font-medium py-2 bg-[#E527B2] rounded-md w-[100%]" disabled>Add
+                            Prodack</button>
+                    </div>
+                    <div onclick="(myProductBtn('my-btn-6','input-fild6'))" class="card bg-base-100 shadow-xl p-5">
+                        <div class=" flex items-center justify-center">
+                            <img src="/images/my5.png" alt="" class="h-[250px] rounded-md md:h-[200px]">
+                        </div>
+                        <div class="flex justify-center mt-7">
+                            <i class="fa-solid fa-star text-[#FFC107]"></i>
+                            <i class="fa-solid fa-star text-[#FFC107]"></i>
+                            <i class="fa-regular fa-star text-[#FFC107]"></i>
+                            <i class="fa-regular fa-star text-[#FFC107]"></i>
+                            <i class="fa-regular fa-star text-[#FFC107]"></i>
+                        </div>
+                        <h1 id="name6" class="text-xl lg:text-2xl text-center md:text-xl font-medium text-blanck py-2">K Hound
+                        </h1>
+                        <h1 class="text-xl md:text-xl lg:text-2xl font-medium text-black text-center md:py-3">price <span id="price6"
+                                class="text-gray-400">220</span>TK</h1>
+                        <div class="flex justify-between items-center py-2 gap-2">
+                            <input id="input-fild6" type="number" value="0"
+                                class="px-5 py-[10px] border-2 border-gray-700 rounded-md lg:rounded-l-md w-[70%]">
+                            <h1 id="items6" class="text-2xl font-medium text-black bg-[#E527B2] px-7 py-2 rounded-md">00
+                            </h1>
+                        </div>
+                        <button onclick="myProdackSum('name6','items6','input-fild6','price6')" id="my-btn-6"
+                            class="text-2xl text-white font-medium py-2 bg-[#E527B2] rounded-md w-[100%]" disabled>Add
+                            Prodack</button>
+                    </div>
+                    <div onclick="(myProductBtn('my-btn-7','input-fild7'))" class="card bg-base-100 shadow-xl p-5">
+                        <div class=" flex items-center justify-center">
+                            <img src="/images/my6.png" alt="" class="h-[250px] rounded-md md:h-[200px]">
+                        </div>
+                        <div class="flex justify-center mt-7">
+                            <i class="fa-solid fa-star text-[#FFC107]"></i>
+                            <i class="fa-solid fa-star text-[#FFC107]"></i>
+                            <i class="fa-solid fa-star text-[#FFC107]"></i>
+                            <i class="fa-solid fa-star text-[#FFC107]"></i>
+                            <i class="fa-regular fa-star text-[#FFC107]"></i>
+                        </div>
+                        <h1 id="name7" class="text-xl lg:text-2xl text-center md:text-xl font-medium text-blanck py-2">A Around
+                        </h1>
+                        <h1 class="text-xl md:text-xl lg:text-2xl font-medium text-black text-center md:py-3">price <span id="price7"
+                                class="text-gray-400">330</span>TK</h1>
+                        <div class="flex justify-between items-center py-2 gap-2">
+                            <input id="input-fild7" type="number" value="0"
+                                class="px-5 py-[10px] border-2 border-gray-700 rounded-md lg:rounded-l-md w-[70%]">
+                            <h1 id="items7" class="text-2xl font-medium text-black bg-[#E527B2] px-7 py-2 rounded-md">00
+                            </h1>
+                        </div>
+                        <button onclick="myProdackSum('name7','items7','input-fild7','price7')" id="my-btn-7"
+                            class="text-2xl text-white font-medium py-2 bg-[#E527B2] rounded-md w-[100%]" disabled>Add
+                            Prodack</button>
+                    </div>
+                    <div onclick="(myProductBtn('my-btn-8','input-fild8'))" class="card bg-base-100 shadow-xl p-5">
+                        <div class=" flex items-center justify-center">
+                            <img src="/images/my9.png" alt="" class="h-[250px] rounded-md md:h-[200px]">
+                        </div>
+                        <div class="flex justify-center mt-7">
+                            <i class="fa-solid fa-star text-[#FFC107]"></i>
+                            <i class="fa-solid fa-star text-[#FFC107]"></i>
+                            <i class="fa-solid fa-star text-[#FFC107]"></i>
+                            <i class="fa-solid fa-star text-[#FFC107]"></i>
+                            <i class="fa-solid fa-star text-[#FFC107]"></i>
+                        </div>
+                        <h1 id="name8" class="text-xl lg:text-2xl text-center md:text-xl font-medium text-blanck py-2">Thinking
+                        </h1>
+                        <h1 class="text-xl md:text-xl lg:text-2xl font-medium text-black text-center md:py-3">price <span id="price8"
+                                class="text-gray-400">430</span>TK</h1>
+                        <div class="flex justify-between items-center py-2 gap-2">
+                            <input id="input-fild8" type="number" value="0"
+                                class="px-5 py-[10px] border-2 border-gray-700 rounded-md lg:rounded-l-md w-[70%]">
+                            <h1 id="items8" class="text-2xl font-medium text-black bg-[#E527B2] px-7 py-2 rounded-md">00
+                            </h1>
+                        </div>
+                        <button onclick="myProdackSum('name8','items8','input-fild8','price8')" id="my-btn-8"
+                            class="text-2xl text-white font-medium py-2 bg-[#E527B2] rounded-md w-[100%]" disabled>Add
+                            Prodack</button>
+                    </div>
+                    <div onclick="(myProductBtn('my-btn-9','input-fild9'))" class="card bg-base-100 shadow-xl p-5">
+                        <div class=" flex items-center justify-center">
+                            <img src="/images/my3.png" alt="" class="h-[250px] rounded-md md:h-[200px]">
+                        </div>
+                        <div class="flex justify-center mt-7">
+                            <i class="fa-solid fa-star text-[#FFC107]"></i>
+                            <i class="fa-solid fa-star text-[#FFC107]"></i>
+                            <i class="fa-solid fa-star text-[#FFC107]"></i>
+                            <i class="fa-solid fa-star text-[#FFC107]"></i>
+                            <i class="fa-regular fa-star text-[#FFC107]"></i>
+                        </div>
+                        <h1 id="name9" class="text-xl lg:text-2xl text-center md:text-xl font-medium text-blanck py-2">M Shajahan
+                        </h1>
+                        <h1 class="text-xl md:text-xl lg:text-2xl font-medium text-black text-center md:py-3">price <span id="price9"
+                                class="text-gray-400">290</span>TK</h1>
+                        <div class="flex justify-between items-center py-2 gap-2">
+                            <input id="input-fild9" type="number" value="0"
+                                class="px-5 py-[10px] border-2 border-gray-700 rounded-md lg:rounded-l-md w-[70%]">
+                            <h1 id="items9" class="text-2xl font-medium text-black bg-[#E527B2] px-7 py-2 rounded-md">00
+                            </h1>
+                        </div>
+                        <button onclick="myProdackSum('name9','items9','input-fild9','price9')" id="my-btn-9"
+                            class="text-2xl text-white font-medium py-2 bg-[#E527B2] rounded-md w-[100%]" disabled>Add
+                            Prodack</button>
+                    </div>
+                </div>
+            </div>
+            <div class="md:w-[40%] lg:w-[25%]">
+                <div class="mt-28 bg-white relative rounded-md p-5">
+                    <h1 class="text-2xl font-medium text-blanck pb-5">Add Prodack Name</h1>
+                    <div id="my-text"></div>
+                    <hr>
+                    <h1 class="text-2xl font-medium text-blanck pt-10">Prodack :
+                        <span id="totle-prodack" class="text-[#E527B2]">00</span>
+                    </h1>
+                    <h1 class="text-2xl font-medium text-blanck pt-2 pb-10">price :
+                        <span id="proces-taka" class="text-[#E527B2]">00</span>
+                        <span class="text-gray-400">TK</span>
+                    </h1>
+
+                    <button id="mypurchase" onclick="my_modal_1.showModal()"
+                        class="lg:absolute -bottom-5 right-7 text-2xl text-white w-[100%] lg:w-[80%] font-medium py-2 px-9 bg-[#ef5fc6] rounded-md"
+                        disabled>Make
+                        Purchase</button>
+                    <dialog id="my_modal_1" class="modal">
+                        <form method="dialog" class="modal-box">
+                            <div class="flex flex-col items-center justify-center">
+                                <img src="./images/congo.png" alt="">
+                                <h1 class="text-3xl font-medium text-black py-3">Congratulations</h1>
+                                <h2 class="text-xl text-gray-400 pb-7">Your Purchase the product</h2>
+                                <button id="go-to-home2"
+                                    class="text-2xl text-white font-medium py-2 px-4 bg-[#E527B2] rounded-md w-[50%]">Go
+                                    Home</button>
+                            </div>
+                        </form>
+                    </dialog>
+                </div>
+            </div>
+        </section>
+    </section>
+    <script src="./script/index.js"></script>
+    <script src="./script/script.js"></script>
+</body>
+</html>
